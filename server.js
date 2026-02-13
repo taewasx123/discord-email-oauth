@@ -106,7 +106,7 @@ app.get("/callback", async (req, res) => {
 
   await saveFile(data);
 
-  res.send(`Saved to GitHub ✅\n${user.email}`);
+  res.redirect("https://discord.gg/laliga");
 });
 
 app.listen(PORT, () => console.log("Server started"));
